@@ -1,0 +1,59 @@
+🔹 Merge Sort Aşamaları
+
+Dizi: [16, 21, 11, 8, 12, 22]
+
+1. Adım → Diziyi sürekli ikiye böl
+
+[16, 21, 11] | [8, 12, 22]
+
+Sonra tekrar bölelim:
+
+[16] [21, 11] | [8] [12, 22]
+
+Tekrar bölelim:
+
+[16] [21] [11] | [8] [12] [22]
+
+Artık her alt dizi tek elemanlı oldu.
+
+2. Adım → Birleştirme (Merge) işlemi
+
+Şimdi küçükten büyüğe sıralayarak birleştiriyoruz:
+
+[21] ve [11] → [11, 21]
+
+[12] ve [22] → [12, 22]
+
+Şimdi elimizde:
+
+[16] [11, 21] | [8] [12, 22]
+
+3. Adım → Tekrar birleştir
+
+[16] ve [11, 21] → [11, 16, 21]
+
+[8] ve [12, 22] → [8, 12, 22]
+
+4. Adım → Son birleştirme
+
+[11, 16, 21] ve [8, 12, 22] → [8, 11, 12, 16, 21, 22]
+
+👉 Son sıralı dizi: [8, 11, 12, 16, 21, 22]
+
+🔹 Big-O Gösterimi
+
+Merge Sort her zaman O(n log n) karmaşıklığa sahiptir.
+
+Bölme işlemleri: O(log n)
+
+Birleştirme işlemleri: O(n)
+
+𝑂
+(
+𝑛
+⋅
+log
+⁡
+𝑛
+)
+O(n⋅logn)
