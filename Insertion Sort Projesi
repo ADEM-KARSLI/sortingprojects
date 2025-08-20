@@ -1,0 +1,24 @@
+Insertion Sort Projesi
+Proje 1
+Verilen dizi:
+[22, 27, 16, 2, 18, 6]
+
+Adım adım sıralama:
+
+İlk eleman (22) zaten sıralı kabul edilir.
+[22, 27, 16, 2, 18, 6]
+
+27 → 22’den büyük, yerinde kalır.
+[22, 27, 16, 2, 18, 6]
+
+16 → 27’den küçük → 27’nin önüne alınır.
+[22, 16, 27, 2, 18, 6]
+Sonra 16 ile 22 karşılaştırılır → 16 küçük, 22’nin önüne alınır.
+[16, 22, 27, 2, 18, 6]
+
+2 → 27’den küçük, onun önüne geçer.
+[16, 22, 2, 27, 18, 6]
+22’den küçük → onun önüne geçer.
+[16, 2, 22, 27, 18, 6]
+16’dan küçük → en başa gelir.
+[2, 16, 22, 27, 18, 6]
